@@ -6,7 +6,7 @@ import Workana from '../Assets/Workana.png';
 
 function Contact() {
   return (
-    <div className="contacPage">
+    <div id="Contact" className="contacPage">
       <img alt="Contato" src={Contato} />
 
       <p className="textContactMe">

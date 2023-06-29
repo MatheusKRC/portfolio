@@ -9,7 +9,7 @@ import Me from '../Assets/Me.webp';
 
 function About() {
   return (
-    <main className="aboutPage">
+    <main id="About" className="aboutPage">
       <section className="aboutMe">
 
         <img alt="Matheus Santos Leão" src={Name} />

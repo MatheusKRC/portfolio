@@ -4,7 +4,7 @@ import Baratiê from '../Images/Baratiê.png';
 
 function Projects() {
   return (
-    <div className="projectsPage">
+    <div id="Projects" className="projectsPage">
       <img alt="Projetos" src={Projetos} />
       <section className="projects">
         <img width="100px" alt="seta" src={arrow} />

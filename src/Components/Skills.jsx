@@ -5,7 +5,7 @@ import SoftCards from './SoftCards';
 
 function Skills() {
   return (
-    <div className="skillsPage">
+    <div id="Skills" className="skillsPage">
       <section className="arte">
         <img alt="Uma arte personalizada" src={Art} />
         <img alt="Habilidades" src={Habilidades} />

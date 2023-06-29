@@ -1,18 +1,32 @@
+import React, { useState } from 'react';
 import Brasil from '../Assets/Brasil.png';
 import EUA from '../Assets/EUA.png';
 
 function NavBar() {
+  const [filterBrasil, setFilterBrasil] = useState('noFilter');
+  const [filterEUA, setFilterEUA] = useState('noFilter');
+
+  const handleClick = ({ target }) => {
+    if (target.alt === 'Brasil') {
+      setFilterBrasil('noFilter');
+      setFilterEUA('Filter');
+    } else {
+      setFilterBrasil('Filter');
+      setFilterEUA('noFilter');
+    }
+  };
+
   return (
     <nav id="About" className="navBarPage">
 
       <div className="language">
 
-        <button className="languageButton" type="button">
-          <img className="languageImg" alt="Bandeira do Brasil" src={Brasil} />
+        <button onClick={handleClick} className="languageButton" type="button">
+          <img id={filterBrasil} className="languageImg" alt="Brasil" src={Brasil} />
         </button>
 
-        <button className="languageButton" type="button">
-          <img className="languageImg" alt="Bandeira dos Estados Unidos" src={EUA} />
+        <button onClick={handleClick} className="languageButton" type="button">
+          <img id={filterEUA} className="languageImg" alt="EUA" src={EUA} />
         </button>
 
       </div>

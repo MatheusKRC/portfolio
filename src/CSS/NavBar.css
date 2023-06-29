@@ -4,10 +4,19 @@
     align-items: center;
 
     margin-top: 30px;
+    margin-right: 80px;
 }
 
 .language {
     margin-right: 100px;
+}
+
+#Filter {
+    filter: saturate(0%)
+}
+
+#noFilter {
+    filter: saturate(100%);
 }
 
 .languageButton {
@@ -19,11 +28,10 @@
 .languageImg {
     cursor: pointer;
 
-    /* border: 2px solid #FAFAFA; */
     border-radius: 10px;
 
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 35px;
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition-duration: .3s;

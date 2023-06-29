@@ -1,20 +1,20 @@
 import Name from '../Assets/Name.png';
 import DesenvolvedorBR from '../Assets/DesenvolvedorBR.png';
-import Linkedin from '../Assets/Linkedin.png';
-import GitHub from '../Assets/GitHub.png';
-import UpWork from '../Assets/UpWork.png';
-import Workana from '../Assets/Workana.png';
-import Tattoo from '../Assets/Tattoo.png';
+
+import tattoo from '../Assets/tattoo.png';
 import Me from '../Assets/Me.webp';
+import SocialMedia from './SocialMedia';
 
 function About() {
   return (
     <main id="About" className="aboutPage">
       <section className="aboutMe">
 
-        <img alt="Matheus Santos Leão" src={Name} />
+        <img className="myName" alt="Matheus Santos Leão" src={Name} />
 
-        <img alt="Desenvolvedor Web" src={DesenvolvedorBR} />
+        <br />
+
+        <img className="myRole" alt="Desenvolvedor Web" src={DesenvolvedorBR} />
 
         <p className="textAboutMe">
           The Last of Us is a television series based on the
@@ -23,26 +23,27 @@ function About() {
           post-apocalyptic world ravaged by a deadly fungus
           that turns people into zombies, as they navigate
           through dangerous terrain and encounter other survivors.
+          The Last of Us is a television series based on the
+          popular video game of the same name. It follows the
+          story of Joel and Ellie, two survivors of a
+          post-apocalyptic world ravaged by a deadly fungus
+          that turns people into zombies, as they navigate
+          through dangerous terrain and encounter other survivors.
         </p>
 
-      </section>
+        <SocialMedia />
 
-      <section className="socialMedias">
-        <img width="50px" alt="Linkedin Icon" src={Linkedin} />
-        <img width="50px" alt="GitHub Icon" src={GitHub} />
-        <img width="50px" alt="UpWork Icon" src={UpWork} />
-        <img width="50px" alt="Workana Icon" src={Workana} />
-      </section>
+        <section className="tattoo">
 
-      <section className="tatto">
+          <img className="tattooImg" alt="Tatuagem da Ellie de The Las Of Us" src={tattoo} />
 
-        <img alt="Tatuagem da Ellie de The Las Of Us" src={Tattoo} />
+        </section>
 
       </section>
 
-      <section className="myPhoto">
+      <section className="myPhotoDiv">
 
-        <img width="300px" alt="Uma foto minha" src={Me} />
+        <img className="myPhoto" alt="Uma foto minha" src={Me} />
 
       </section>
     </main>

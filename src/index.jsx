@@ -6,6 +6,7 @@ import './CSS/Contact.css';
 import './CSS/Skills.css';
 import './CSS/Projects.css';
 import './CSS/NavBar.css';
+import './CSS/Colors.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Home from './Pages/Home';

@@ -62,9 +62,9 @@
 /* Referência do CSS: https://uiverse.io/alexmaracinaru/empty-moose-12 */
 
 .hover-underline-animation {
-    position: relative;
     color: black;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .hover-underline-animation:after {

@@ -1,10 +1,10 @@
-import js from '../Icons/js.png';
+import JavaScript from '../Icons/js.png';
 import typescript from '../Icons/typescript.png';
 import python from '../Icons/python.png';
 import html from '../Icons/html.png';
 import css from '../Icons/css.png';
 import docker from '../Icons/docker.png';
-import atom from '../Icons/atom.png';
+import React from '../Icons/React.png';
 import redux from '../Icons/redux.png';
 import test from '../Icons/test.png';
 import git from '../Icons/git.png';
@@ -20,58 +20,73 @@ import linux from '../Icons/linux.png';
 function Icons() {
   return (
     <section className="skills">
-      <img width="60px" alt="JavaScript Icon" src={js} />
-      JavaScript
+      <figure className="figure">
+        <img className="icon" width="60px" alt="JavaScript Icon" src={JavaScript} />
+        <figcaption className="iconText">JavaScript</figcaption>
 
-      <img width="60px" alt="TypeScript Icon" src={typescript} />
-      TypeScript
+      </figure>
 
-      <img width="60px" alt="Python Icon" src={python} />
-      Python
+      <figure className="figure">
+        <img className="icon" width="60px" alt="TypeScript Icon" src={typescript} />
+        <figcaption className="iconText">TypeScript</figcaption>
 
-      <img width="60px" alt="HTML Icon" src={html} />
-      HTML
+      </figure>
 
-      <img width="60px" alt="CSS Icon" src={css} />
-      CSS
+      <figure>
+        <img className="icon" width="60px" alt="Python Icon" src={python} />
+        <figcaption>Python</figcaption>
 
-      <img width="60px" alt="Docker Icon" src={docker} />
+      </figure>
+
+      <figure>
+        <img className="icon" width="60px" alt="HTML Icon" src={html} />
+        <figcaption>HTML</figcaption>
+
+      </figure>
+
+      <figure>
+        <img className="icon" width="60px" alt="CSS Icon" src={css} />
+        <figcaption>CSS</figcaption>
+
+      </figure>
+
+      <img className="icon" width="60px" alt="Docker Icon" src={docker} />
       Docker
 
-      <img width="60px" alt="React.js Icon" src={atom} />
+      <img className="icon" width="60px" alt="React.js Icon" src={React} />
       React.js
 
-      <img width="60px" alt="Redux Icon" src={redux} />
+      <img className="icon" width="60px" alt="Redux Icon" src={redux} />
       Redux
 
-      <img width="60px" alt="Testing Library Icon" src={test} />
+      <img className="icon" width="60px" alt="Testing Library Icon" src={test} />
       Testing Library
 
-      <img width="60px" alt="Git Icon" src={git} />
+      <img className="icon" width="60px" alt="Git Icon" src={git} />
       Git
 
-      <img width="60px" alt="GitHub Icon" src={github} />
+      <img className="icon" width="60px" alt="GitHub Icon" src={github} />
       GitHub
 
-      <img width="60px" alt="NPM Icon" src={npm} />
+      <img className="icon" width="60px" alt="NPM Icon" src={npm} />
       NPM
 
-      <img width="60px" alt="Netlify Icon" src={netifly} />
+      <img className="icon" width="60px" alt="Netlify Icon" src={netifly} />
       Netlify
 
-      <img width="60px" alt="ExpressJs Icon" src={expressJs} />
+      <img className="icon" width="60px" alt="ExpressJs Icon" src={expressJs} />
       ExpressJs
 
-      <img width="60px" alt="MySQL Icon" src={mysql} />
+      <img className="icon" width="60px" alt="MySQL Icon" src={mysql} />
       MySQL
 
-      <img width="60px" alt="MongoDB Icon" src={mongoDB} />
+      <img className="icon" width="60px" alt="MongoDB Icon" src={mongoDB} />
       MongoDB
 
-      <img width="60px" alt="Figma Icon" src={figma} />
+      <img className="icon" width="60px" alt="Figma Icon" src={figma} />
       Figma
 
-      <img width="60px" alt="Linux Icon" src={linux} />
+      <img className="icon" width="60px" alt="Linux Icon" src={linux} />
       Linux
     </section>
   );

@@ -1,0 +1,131 @@
+.skillsPage {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: black;
+}
+
+.artSection {
+    margin-top: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artDiv {
+    border-radius: 5px;
+
+    width: 1400px;
+    height: 350px;
+
+    background-color: white;
+}
+
+.art {
+    border-radius: 5px;
+
+    width: 1400px;
+    height: 350px;
+
+    transform: translate(-14px, 14px);
+}
+
+
+.skillName {
+    position: relative;
+
+    bottom: 130px;
+    right: 430px;
+}
+
+.skills {
+    display: flex;
+    /* color: white; */
+
+    flex-wrap: wrap;
+
+    margin-top: -200px;
+    margin-left: 16%;
+    margin-right: 16%;
+
+    justify-content: space-between;
+}
+
+.iconFigure {
+    margin-top: 150px;
+    margin-left: 65px;
+    margin-right: 65px;
+
+    filter: saturate(0);
+
+    transition-duration: .5s;
+}
+
+.icon {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.iconName {
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.iconFigure:hover {
+    filter: saturate(100%);
+
+    transform: translate(-10px, -10px);    
+}
+
+.softSkills {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.softCard {
+    background-color: white;
+
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+
+    transition-duration: .5s;
+}
+
+.softBack {
+    transition-duration: .5s;
+}
+
+.softSkill {
+    background-color: black;
+    transform: translate(60px, 10px);
+}
+
+.softText {
+    text-align: left;
+
+    background-color: black;
+    transform: translate(10px, -10px);
+    
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.softCard:hover {
+    box-shadow: 0 4px 18px 0 white;
+}
+
+.softBack:hover {
+    transform: translate(10px, -10px);
+}
+

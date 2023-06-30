@@ -46,11 +46,13 @@
     margin-left: 20px;
 
     filter: saturate(0%);
-    transition-duration: .3s;
+    transition-duration: .5s;
 }
 
 .socialIcons:hover {
     filter: saturate(100%);
+
+    transform: translate(-5px, -5px); 
 }
 
 .socialIcons:active {

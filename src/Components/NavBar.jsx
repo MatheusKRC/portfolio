@@ -4,7 +4,7 @@ import EUA from '../Assets/EUA.png';
 
 function NavBar() {
   const [filterBrasil, setFilterBrasil] = useState('noFilter');
-  const [filterEUA, setFilterEUA] = useState('noFilter');
+  const [filterEUA, setFilterEUA] = useState('Filter');
 
   const handleClick = ({ target }) => {
     if (target.alt === 'Brasil') {

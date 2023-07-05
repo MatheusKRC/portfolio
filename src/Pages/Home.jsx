@@ -14,7 +14,6 @@ function Home() {
       <Projects />
       <Contact />
 
-      <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a>
     </div>
   );
 }

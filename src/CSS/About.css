@@ -1,0 +1,99 @@
+.aboutPage {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+
+    height: 1030px;
+}
+
+.aboutMe {
+    margin-top: 30px;
+    display: flexbox;
+}
+
+.myName {
+    margin-left: 30px;
+    width: 661px;
+    height: 105px;  
+}
+
+.myRole {
+    margin-left: 40px;
+    width: 316px;
+    height: 39px;   
+}
+
+.textAboutMe {
+    margin-left: 50px;
+
+    width: 720px;
+    height: 200px;
+    flex-direction: column;
+
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.socialMedias {
+   margin-left: 200px;
+}
+
+.socialIcons {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    filter: saturate(0%);
+    transition-duration: .5s;
+}
+
+.socialIcons:hover {
+    filter: saturate(100%);
+
+    transform: translate(-5px, -5px); 
+}
+
+.socialIcons:active {
+    transform: translate(3px, 3px);
+}
+
+.tattoo {
+    margin-top: -80px;
+    margin-left: 30%;
+}
+
+.tattooImg {
+    width: 350px;
+    height: 600px;
+
+    transform: rotate(270deg);
+}
+
+.myPhotoDiv {
+    border-radius: 5px;
+
+    width: 504px;
+    height: 757px;
+
+    margin-top: 4%;
+    margin-right: 15%;
+
+    background-color: #000;
+}
+
+.myPhoto {
+    border-radius: 5px;
+
+    width: 504px;
+    height: 757px;
+
+    filter: saturate(0%);
+    transform: translate(14px, 14px);
+    transition-duration: .3s;
+}
+
+.myPhoto:hover {
+    filter: saturate(100%);
+}

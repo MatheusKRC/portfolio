@@ -1,0 +1,60 @@
+.contactPage {
+    background-color: black;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactName {
+    display: flex;
+
+    justify-content: center;
+}
+
+.github {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    filter: contrast(0);
+    transition-duration: .5s;
+}
+
+.github:hover {
+    /* filter: saturate(100%); */
+
+    transform: translate(-5px, -5px); 
+}
+
+.textContactMe {
+    color: white;
+
+    width: 500px;
+
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.references {
+    color: white;
+
+    margin-bottom: 5px;
+
+    text-align: center;
+}
+
+.flaticon {
+    text-decoration: none;
+
+    color: white;
+}

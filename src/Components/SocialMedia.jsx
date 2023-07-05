@@ -3,7 +3,8 @@ import GitHub from '../Assets/GitHub.png';
 import UpWork from '../Assets/UpWork.png';
 import Workana from '../Assets/Workana.png';
 
-function SocialMedia() {
+// eslint-disable-next-line react/prop-types
+function SocialMedia({ github }) {
   return (
     <section className="socialMedias">
       <a href="https://www.linkedin.com/in/matheuskrc/">
@@ -12,7 +13,7 @@ function SocialMedia() {
       </a>
 
       <a href="https://github.com/MatheusKRC">
-        <img className="socialIcons" width="50px" alt="GitHub Icon" src={GitHub} />
+        <img className={github} width="50px" alt="GitHub Icon" src={GitHub} />
 
       </a>
 

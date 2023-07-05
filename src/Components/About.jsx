@@ -31,7 +31,7 @@ function About() {
           through dangerous terrain and encounter other survivors.
         </p>
 
-        <SocialMedia />
+        <SocialMedia github="socialIcons" />
 
         <section className="tattoo">
 

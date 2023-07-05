@@ -23,30 +23,41 @@ function Projects() {
         <img className="projectsName" alt="Projetos" src={Projetos} />
       </div>
 
-      <section onMouseEnter={blur} onMouseLeave={blur} className="projects">
-        <img className="leftArrow" alt="seta" src={arrow} />
-        <img className={filter} alt="Baratiê" src={Baratiê} />
-        <img className="arrow" alt="seta" src={arrow} />
+      <div className="projectsDiv">
+        <button className="arrowButton" type="button">
+          <img className="leftArrow" alt="seta" src={arrow} />
 
-        <div className={infoFilter}>
+        </button>
 
-          <h1 className="projectTitle">Baratiê Recipes App</h1>
-          <h3 className="projectDesc">
-            Um Aplicativo Mobile com diferentes
-            receitas de comida e bebidas
-          </h3>
+        <section onMouseEnter={blur} onMouseLeave={blur} className="projects">
 
-          <h4 className="projectTasks">React.js</h4>
-          <h4 className="projectTasks">JavaScript</h4>
-          <h4 className="projectTasks">UI & UX</h4>
-          <h4 className="projectTasks">CSS</h4>
+          <img className={filter} alt="Baratiê" src={Baratiê} />
 
-          <br />
+          <div className={infoFilter}>
 
-          <button type="button" className="projectButtons">Repositorio</button>
-          <button type="button" className="projectButtons">Veja o Site</button>
-        </div>
-      </section>
+            <h1 className="projectTitle">Baratiê Recipes App</h1>
+            <h3 className="projectDesc">
+              Um Aplicativo Mobile com diferentes
+              receitas de comida e bebidas
+            </h3>
+
+            <h4 className="projectTasks">React.js</h4>
+            <h4 className="projectTasks">JavaScript</h4>
+            <h4 className="projectTasks">UI & UX</h4>
+            <h4 className="projectTasks">CSS</h4>
+
+            <br />
+
+            <button type="button" className="projectButtons">Repositorio</button>
+            <button type="button" className="projectButtons">Veja o Site</button>
+          </div>
+        </section>
+        <button className="arrowButton" type="button">
+          <img className="arrow" alt="seta" src={arrow} />
+
+        </button>
+
+      </div>
 
     </div>
   );

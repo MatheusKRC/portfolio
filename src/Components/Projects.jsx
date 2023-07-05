@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import Projetos from '../Assets/Projetos.png';
+import Project from '../AssetsENG/Projects.png';
 import arrow from '../Assets/arrow.png';
 import Baratiê from '../Images/Baratiê.png';
 
-function Projects() {
+function Projects({ language }) {
   const [filter, setFilter] = useState('projectImage');
   const [infoFilter, setInfoFilter] = useState('projectInfos');
 
@@ -20,7 +22,8 @@ function Projects() {
     <div id="Projects" className="projectsPage">
 
       <div className="projectsName">
-        <img className="projectsName" alt="Projetos" src={Projetos} />
+        {language === 'Portugues' ? <img className="projectsName" alt="Projetos" src={Projetos} />
+          : <img className="projectsName" alt="Projetos" src={Project} />}
       </div>
 
       <div className="projectsDiv">

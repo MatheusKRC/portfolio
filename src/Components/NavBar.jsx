@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Brasil from '../Assets/Brasil.png';
 import EUA from '../Assets/EUA.png';
 
-function NavBar() {
+function NavBar({ onClick }) {
   const [filterBrasil, setFilterBrasil] = useState('noFilter');
   const [filterEUA, setFilterEUA] = useState('Filter');
 
@@ -10,9 +11,11 @@ function NavBar() {
     if (target.alt === 'Brasil') {
       setFilterBrasil('noFilter');
       setFilterEUA('Filter');
+      onClick('Portugues');
     } else {
       setFilterBrasil('Filter');
       setFilterEUA('noFilter');
+      onClick('Ingles');
     }
   };
 
@@ -33,19 +36,23 @@ function NavBar() {
 
       <div className="links">
         <a className="navLink" href="#About">
-          <span className="hover-underline-animation"> Sobre Mim </span>
+          {filterBrasil === 'noFilter' ? <span className="hover-underline-animation"> Sobre Mim </span>
+            : <span className="hover-underline-animation"> About Me </span> }
 
         </a>
         <a className="navLink" href="#Skills">
-          <span className="hover-underline-animation"> Habilidades </span>
+          {filterBrasil === 'noFilter' ? <span className="hover-underline-animation"> Habilidades </span>
+            : <span className="hover-underline-animation"> Skills </span>}
 
         </a>
         <a className="navLink" href="#Projects">
-          <span className="hover-underline-animation"> Projetos </span>
+          {filterBrasil === 'noFilter' ? <span className="hover-underline-animation"> Projetos </span>
+            : <span className="hover-underline-animation"> Projects </span>}
 
         </a>
         <a className="navLink" href="#Contact">
-          <span className="hover-underline-animation"> Contato </span>
+          {filterBrasil === 'noFilter' ? <span className="hover-underline-animation"> Contato </span>
+            : <span className="hover-underline-animation"> Contact </span>}
 
         </a>
 

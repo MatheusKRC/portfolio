@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import Name from '../Assets/Name.png';
 import DesenvolvedorBR from '../Assets/DesenvolvedorBR.png';
-
+import WebDeveloper from '../AssetsENG/WebDeveloper.png';
 import tattoo from '../Assets/tattoo.png';
 import Me from '../Assets/Me.webp';
 import SocialMedia from './SocialMedia';
 
-function About() {
+function About({ language }) {
   return (
     <main id="About" className="aboutPage">
       <section className="aboutMe">
@@ -14,7 +15,8 @@ function About() {
 
         <br />
 
-        <img className="myRole" alt="Desenvolvedor Web" src={DesenvolvedorBR} />
+        {language === 'Portugues' ? <img className="myRole" alt="Desenvolvedor Web" src={DesenvolvedorBR} />
+          : <img className="myRoleENG" alt="Desenvolvedor Web" src={WebDeveloper} />}
 
         <p className="textAboutMe">
           The Last of Us is a television series based on the

@@ -1,24 +1,23 @@
+/* eslint-disable react/prop-types */
 import Art from '../Assets/Art.png';
-import Habilidades from '../Assets/Habilidades.png';
-// import Icons from './Icons';
+import ArtENG from '../AssetsENG/ArtENG.png';
 import IconsMap from './IconsMap';
 import SoftCards from './SoftCards';
 
-function Skills() {
+function Skills({ language }) {
   return (
     <div id="Skills" className="skillsPage">
       <section className="artSection">
 
         <div className="artDiv">
-          <img className="art" alt="Uma arte personalizada" src={Art} />
+          {language === 'Portugues' ? <img className="art" alt="Uma arte personalizada" src={Art} />
+            : <img className="art" alt="Uma arte personalizada" src={ArtENG} /> }
         </div>
-
-        <img className="skillName" alt="Habilidades" src={Habilidades} />
 
       </section>
 
       <IconsMap />
-      <SoftCards />
+      <SoftCards language={language} />
     </div>
   );
 }

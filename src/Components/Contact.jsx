@@ -1,12 +1,15 @@
+/* eslint-disable react/prop-types */
 import Contato from '../Assets/Contato.png';
+import ContactName from '../AssetsENG/Contact.png';
 import SocialMedia from './SocialMedia';
 
-function Contact() {
+function Contact({ language }) {
   return (
     <div id="Contact" className="contactPage">
 
       <div className="contactName">
-        <img alt="Contato" src={Contato} />
+        {language === 'Portugues' ? <img alt="Contato" src={Contato} />
+          : <img alt="Contato" src={ContactName} />}
 
       </div>
 
@@ -26,7 +29,8 @@ function Contact() {
 
       <footer className="references">
         {' '}
-        <h3 className="references">Icones:</h3>
+        {language === 'Portugues' ? <h3 className="references">Icones:</h3>
+          : <h3 className="references">Icons:</h3>}
         <a className="flaticon" href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a>
 
       </footer>

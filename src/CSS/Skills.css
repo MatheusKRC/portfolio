@@ -27,6 +27,28 @@
     margin-bottom: 140px;
 }
 
+.artDivMoon {
+    border-radius: 5px;
+
+    width: 1400px;
+    height: 350px;
+
+    background-color: white;
+
+    margin-bottom: 140px;
+}
+
+.artDivSun {
+    border-radius: 5px;
+
+    width: 1400px;
+    height: 350px;
+
+    background-color: black;
+
+    margin-bottom: 140px;
+}
+
 .art {
     border-radius: 5px;
 
@@ -63,6 +85,7 @@
     margin-right: 65px;
 
     filter: saturate(0);
+    color: black;
 
     transition-duration: .5s;
 }
@@ -94,8 +117,29 @@
     color: white;
 }
 
+
 .softCard {
     background-color: white;
+
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+
+    transition-duration: .5s;
+}
+
+.softCardMoon {
+    background-color: white;
+
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+
+    transition-duration: .5s;
+}
+
+.softCardSun {
+    background-color: rgb(15, 15, 16);
 
     width: 350px;
     border-radius: 50px;
@@ -125,6 +169,14 @@
 
 .softCard:hover {
     box-shadow: 0 4px 18px 0 white;
+}
+
+.softCardMoon:hover {
+    box-shadow: 0 4px 18px 0 white;
+}
+
+.softCardSun:hover {
+    box-shadow: 0 4px 18px 0 rgb(15, 15, 16);
 }
 
 .softBack:hover {

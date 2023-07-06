@@ -7,17 +7,22 @@ import Skills from '../Components/Skills';
 
 function Home() {
   const [language, setLanguage] = useState('Portugues');
+  const [colorMode, setColorMode] = useState('');
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
   };
+
+  const changeColor = (color) => {
+    setColorMode(color);
+  };
   return (
     <div>
-      <NavBar onClick={changeLanguage} />
-      <About language={language} />
-      <Skills language={language} />
-      <Projects language={language} />
-      <Contact language={language} />
+      <NavBar onClick={changeLanguage} changeColor={changeColor} colorMode={colorMode} />
+      <About language={language} colorMode={colorMode} />
+      <Skills language={language} colorMode={colorMode} />
+      <Projects language={language} colorMode={colorMode} />
+      <Contact language={language} colorMode={colorMode} />
 
     </div>
   );

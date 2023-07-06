@@ -19,8 +19,36 @@
     transition-duration: .5s;
 }
 
+.githubSun {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    filter: contrast(0);
+    transition-duration: .5s;
+}
+
+.githubMoon {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    filter: contrast(0);
+    transition-duration: .5s;
+}
+
+.githubMoon:hover {
+    filter: contrast(30%);
+
+    transform: translate(-5px, -5px); 
+}
+
+.githubSun:hover {
+    filter: contrast(100%);
+
+    transform: translate(-5px, -5px); 
+}
+
 .github:hover {
-    /* filter: saturate(100%); */
+    filter: contrast(100%);
 
     transform: translate(-5px, -5px); 
 }
@@ -58,3 +86,13 @@
 
     color: white;
 }
+
+.Sun {
+    background-color: white;
+    color: black;
+  }
+  
+  .Moon {
+    background-color: black;
+    color: white;
+  }

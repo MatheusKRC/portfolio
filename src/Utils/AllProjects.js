@@ -1,3 +1,10 @@
+const changeColor = (color, asset1, asset2) => {
+  if (color === 'Sun' || color === '') {
+    return asset1;
+  }
+  return asset2;
+};
+
 const projectsBR = [{
   name: 'Baratiê',
   describe: 'Um Aplicativo Mobile com diferentes receitas de comida e bebidas',
@@ -26,4 +33,4 @@ const projectsENG = [{
   skills: ['Node.js', 'JavaScript', 'Redux', 'Unit Tests'],
 }];
 
-export { projectsBR, projectsENG };
+export { projectsBR, projectsENG, changeColor };

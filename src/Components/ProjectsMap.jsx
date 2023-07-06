@@ -1,13 +1,13 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import arrow from '../Assets/arrow.png';
+import ArrowW from '../Assets/White/ArrowW.png';
 import Baratiê from '../Images/Baratiê.png';
 import TFC from '../Images/TFC.png';
 import TryBeer from '../Images/TryBeer.png';
-import { projectsBR, projectsENG } from '../Utils/AllProjects';
+import { changeColor, projectsBR, projectsENG } from '../Utils/AllProjects';
 
-function ProjectsMap({ language }) {
+function ProjectsMap({ language, colorMode }) {
   const [filter, setFilter] = useState('projectImage');
   const [infoFilter, setInfoFilter] = useState('projectInfos');
   const projects = [Baratiê, TFC, TryBeer];
@@ -34,7 +34,7 @@ function ProjectsMap({ language }) {
   return (
     <div className="projectsDiv">
       <button onClick={handleClick} className="arrowButton" alt="left" type="button">
-        <img className="leftArrow" alt="left" src={arrow} />
+        <img className="leftArrow" alt="left" src={changeColor(colorMode, arrow, ArrowW)} />
 
       </button>
 
@@ -79,7 +79,7 @@ function ProjectsMap({ language }) {
         )}
       </section>
       <button onClick={handleClick} className="arrowButton" alt="right" type="button">
-        <img className="arrow" alt="right" src={arrow} />
+        <img className="arrow" alt="right" src={changeColor(colorMode, arrow, ArrowW)} />
 
       </button>
 

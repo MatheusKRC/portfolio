@@ -1,18 +1,21 @@
 /* eslint-disable react/prop-types */
 import Projetos from '../Assets/Projetos.png';
+import ProjetosW from '../Assets/White/ProjetosW.png';
 import Project from '../AssetsENG/Projects.png';
+import ProjectsB from '../AssetsENG/ProjectsB.png';
+import { changeColor } from '../Utils/AllProjects';
 import ProjectsMap from './ProjectsMap';
 
-function Projects({ language }) {
+function Projects({ language, colorMode }) {
   return (
-    <div id="Projects" className="projectsPage">
+    <div id="Projects" className={`projectsPage ${colorMode}`}>
 
       <div className="projectsName">
-        {language === 'Portugues' ? <img className="projectsName" alt="Projetos" src={Projetos} />
-          : <img className="projectsName" alt="Projetos" src={Project} />}
+        {language === 'Portugues' ? <img className="projectsName" alt="Projetos" src={changeColor(colorMode, Projetos, ProjetosW)} />
+          : <img className="projectsName" alt="Projetos" src={changeColor(colorMode, Project, ProjectsB)} />}
       </div>
 
-      <ProjectsMap />
+      <ProjectsMap language={language} colorMode={colorMode} />
 
     </div>
   );

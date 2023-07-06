@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-function SoftCards({ language }) {
+function SoftCards({ language, colorMode }) {
   return (
     language === 'Portugues' ? (
       <section className="softSkills">
 
-        <div className="softBack">
-          <h2 className="softSkill">Criatividade</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Criatividade</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a
@@ -22,10 +22,10 @@ function SoftCards({ language }) {
 
         </div>
 
-        <div className="softBack">
-          <h2 className="softSkill">Comunicação</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Comunicação</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a
@@ -38,10 +38,10 @@ function SoftCards({ language }) {
 
         </div>
 
-        <div className="softBack">
-          <h2 className="softSkill">Curva De Aprendizado</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Curva De Aprendizado</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a
@@ -57,10 +57,10 @@ function SoftCards({ language }) {
     ) : (
       <section className="softSkills">
 
-        <div className="softBack">
-          <h2 className="softSkill">Criativity</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Criativity</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a
@@ -74,10 +74,10 @@ function SoftCards({ language }) {
 
         </div>
 
-        <div className="softBack">
-          <h2 className="softSkill">Comunication</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Comunication</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a
@@ -90,10 +90,10 @@ function SoftCards({ language }) {
 
         </div>
 
-        <div className="softBack">
-          <h2 className="softSkill">Learning Curve</h2>
-          <div className="softCard">
-            <p className="softText">
+        <div className={`softBack ${colorMode}`}>
+          <h2 className={`softSkill ${colorMode}`}>Learning Curve</h2>
+          <div className={`softCard${colorMode}`}>
+            <p className={`softText ${colorMode}`}>
               The Last of Us is a television series based on the
               popular video game of the same name. It follows the
               story of Joel and Ellie, two survivors of a

@@ -1,24 +1,25 @@
+/* eslint-disable react/prop-types */
 import Art from '../Assets/Art.png';
-import Habilidades from '../Assets/Habilidades.png';
-// import Icons from './Icons';
+import ArtB from '../Assets/ArtB.png';
+import ArtENG from '../AssetsENG/ArtENG.png';
+import ArtEB from '../AssetsENG/ArtEB.png';
 import IconsMap from './IconsMap';
 import SoftCards from './SoftCards';
 
-function Skills() {
+function Skills({ language, colorMode }) {
   return (
-    <div id="Skills" className="skillsPage">
+    <div id="Skills" className={`skillsPage ${colorMode}`}>
       <section className="artSection">
 
-        <div className="artDiv">
-          <img className="art" alt="Uma arte personalizada" src={Art} />
+        <div className={`artDiv${colorMode}`}>
+          {language === 'Portugues' ? <img className="art" alt="Uma arte personalizada" src={colorMode === 'Moon' || colorMode === '' ? Art : ArtB} />
+            : <img className="art" alt="Uma arte personalizada" src={colorMode === 'Moon' || colorMode === '' ? ArtENG : ArtEB} /> }
         </div>
-
-        <img className="skillName" alt="Habilidades" src={Habilidades} />
 
       </section>
 
-      <IconsMap />
-      <SoftCards />
+      <IconsMap colorMode={colorMode} />
+      <SoftCards language={language} colorMode={colorMode} />
     </div>
   );
 }

@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 .aboutPage {
     display: flex;
     background-color: white;
@@ -8,7 +13,8 @@
 
 .aboutMe {
     margin-top: 30px;
-    display: flexbox;
+
+    animation: moveToLeft 2s ease;
 }
 
 .myName {
@@ -20,6 +26,11 @@
 .myRole {
     margin-left: 40px;
     width: 316px;
+    height: 39px;   
+}
+.myRoleENG {
+    margin-left: 40px;
+    width: 250px;
     height: 39px;   
 }
 
@@ -72,6 +83,7 @@
 }
 
 .myPhotoDiv {
+    animation: moveToRight 2s ease;
     border-radius: 5px;
 
     width: 504px;
@@ -81,6 +93,32 @@
     margin-right: 15%;
 
     background-color: #000;
+}
+
+.myPhotoDivMoon {
+  animation: moveToRight 2s ease;
+  border-radius: 5px;
+
+  width: 504px;
+  height: 757px;
+
+  margin-top: 4%;
+  margin-right: 15%;
+
+  background-color: white;
+}
+
+.myPhotoDivSun {
+  animation: moveToRight 2s ease;
+  border-radius: 5px;
+
+  width: 504px;
+  height: 757px;
+
+  margin-top: 4%;
+  margin-right: 15%;
+
+  background-color: black;
 }
 
 .myPhoto {
@@ -97,3 +135,57 @@
 .myPhoto:hover {
     filter: saturate(100%);
 }
+
+@keyframes moveToLeft {
+    0% {
+      transform: translateX(-100px);
+      filter: opacity(20%)
+    ;
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(100px);
+      filter: opacity(20%)
+    ;
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes moveToUp {
+    0% {
+      transform: translateY(100px);
+      filter: opacity(20%)
+    ;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes moveToDown {
+    0% {
+      transform: translateY(-100px);
+      filter: opacity(20%)
+    ;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .Sun {
+    background-color: white;
+    color: black;
+  }
+
+  .Moon {
+    background-color: rgb(15, 15, 16);
+    color: white;
+  }

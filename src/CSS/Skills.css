@@ -160,3 +160,79 @@
         height: 250px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .artDiv, .artDivSun, .artDivMoon {
+        width: 320px;
+        height: 100px;
+
+        margin-bottom: 200px;
+    }
+
+    .art {
+        width: 320px;
+        height: 100px;
+    }
+
+    .iconFigure {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .icon {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .iconName {
+        font-size: small;
+    }
+
+   
+    .softSkills {
+        display: flex;
+        flex-wrap: wrap;
+    
+        justify-content: space-evenly;
+    
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: white;
+    }
+    
+    
+    .softCard, .softCardMoon, .softCardSun {
+        background-color: white;
+    
+        width: 350px;
+        border-radius: 50px;
+        text-align: center;
+    
+        transition-duration: .5s;
+    }
+    
+    .softCardSun {
+        background-color: rgb(15, 15, 16);
+    }
+    
+    .softBack {
+        transition-duration: .5s;
+    }
+    
+    .softSkill {
+        transform: translate(30px, 10px);
+    }
+
+    
+    .softText {
+        text-align: left;
+    
+        background-color: black;
+        transform: translate(10px, -10px);
+        
+        padding: 30px;
+        border-radius: 50px;
+    }
+    
+}

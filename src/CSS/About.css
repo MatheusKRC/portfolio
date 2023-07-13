@@ -169,7 +169,7 @@ html {
     color: white;
   }
 
-  @media screen and (max-width: 1550px) {
+  @media only screen and (max-width: 1550px) {
 
     .myPhoto {
       width: 400px;
@@ -214,5 +214,89 @@ html {
     .aboutPage {
       height: 900px;
     }
+}
 
+@media only screen and (max-width: 500px) {
+  .aboutPage {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+
+    height: 1030px;
+}
+
+  .myPhoto {
+    filter: opacity(0%);
+    width: 400px;
+    height: 600px;
+  }
+
+  .myPhotoDiv, .myPhotoDivMoon, .myPhotoDivSun {
+    filter: opacity(0%);
+    width: 400px;
+    height: 600px;
+
+    margin-right: 10%;
+  }
+
+  .myName {
+    width: 350px;
+    height: 60px;
+  }
+
+  .myRole {
+    width: 240px;
+    height: 40px;
+
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .textAboutMe {
+    width: 380px;
+    height: 200px;
+    flex-direction: column;
+
+    color: #000;
+    font-size: 15px;
+
+    margin-bottom: -50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    text-align: start;
+  }
+
+  .socialMedias {
+    margin-top: 180px;
+     margin-left: 50px;
+     margin-right: 50px;
+  }
+  
+  .socialIcons {
+      margin-top: 20px;
+      margin-left: 20px;
+  
+      filter: saturate(0%);
+      transition-duration: .5s;
+  }
+  
+  .tattoo {
+    margin-top: -80px;
+    margin-left: 25%;
+  }
+
+  .tattooImg {
+    width: 210px;
+    height: 400px;
+
+    transform: rotate(270deg);
+  }
+
+  .aboutPage {
+    height: 900px;
+  }
+
+  
 }

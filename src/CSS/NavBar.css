@@ -186,3 +186,9 @@ body {
     background-color: black;
     color: white;
   }
+
+@media screen and (max-width: 500px){
+    .navBarPage {
+        filter: opacity(0%);
+    }
+}

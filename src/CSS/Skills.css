@@ -205,8 +205,8 @@
     .softCard, .softCardMoon, .softCardSun {
         background-color: white;
     
-        width: 280px;
-        height: 200px;
+        width: 30vh;
+        height: 22vh;
         border-radius: 50px;
         text-align: center;
     
@@ -234,6 +234,8 @@
         
         padding: 30px;
         border-radius: 50px;
+    
+        height: 16vh;
 
         font-size: small;
     }

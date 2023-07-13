@@ -183,3 +183,14 @@
     transform: translate(10px, -10px);
 }
 
+@media screen and (max-width: 1550px) {
+    .artDiv {
+        width: 1020px;
+        height: 250px;
+    }
+
+    .art {
+        width: 1020px;
+        height: 250px;
+    }
+}

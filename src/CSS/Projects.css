@@ -163,3 +163,24 @@
 
     transform: translate(2px, 2px);
 }
+
+@media screen and (max-width: 1550px) {
+    .projects {
+        width: 1166px;
+        height: 668px;
+    }
+
+    .projectImage {
+        width: 1166px;
+        height: 668px;
+    }
+
+    .projectBlur {
+        width: 1166px;
+        height: 668px;
+    }
+
+    .infoVisible {
+        bottom: 670px;
+    }
+}

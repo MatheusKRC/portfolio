@@ -96,3 +96,9 @@
     background-color: black;
     color: white;
   }
+
+@media screen and (max-width: 1550px){
+    .textContactMe {
+        font-size: 18px;
+    }
+}

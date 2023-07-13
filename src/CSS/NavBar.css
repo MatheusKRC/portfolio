@@ -189,6 +189,7 @@ body {
 
 @media screen and (max-width: 500px){
     .navBarPage {
+        width: 300px;
         filter: opacity(0%);
     }
 }

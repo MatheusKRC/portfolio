@@ -205,7 +205,8 @@
     .softCard, .softCardMoon, .softCardSun {
         background-color: white;
     
-        width: 350px;
+        width: 280px;
+        height: 200px;
         border-radius: 50px;
         text-align: center;
     
@@ -221,7 +222,7 @@
     }
     
     .softSkill {
-        transform: translate(30px, 10px);
+        transform: translate(10px, 10px);
     }
 
     
@@ -233,6 +234,8 @@
         
         padding: 30px;
         border-radius: 50px;
+
+        font-size: small;
     }
     
 }

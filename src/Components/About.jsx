@@ -24,18 +24,25 @@ function About({ language, colorMode }) {
           : <img className="myRoleENG" alt="Desenvolvedor Web" src={changeColor(colorMode, WebDeveloper, RoleB)} />}
 
         <p className={`textAboutMe ${colorMode}`}>
-          The Last of Us is a television series based on the
-          popular video game of the same name. It follows the
-          story of Joel and Ellie, two survivors of a
-          post-apocalyptic world ravaged by a deadly fungus
-          that turns people into zombies, as they navigate
-          through dangerous terrain and encounter other survivors.
-          The Last of Us is a television series based on the
-          popular video game of the same name. It follows the
-          story of Joel and Ellie, two survivors of a
-          post-apocalyptic world ravaged by a deadly fungus
-          that turns people into zombies, as they navigate
-          through dangerous terrain and encounter other survivors.
+          Olá, Meu nome é Matheus Santos Leão e sou
+          do Piauí, Brasil.
+          <br />
+          Sou um Desenvolvedor FullStack formado em Desenvolvimento Web na Trybe.
+          <br />
+          Tenho experiência trabalhando com FrontEnd e Backend
+          aplicados em projetos que foram desenvolvidos ao longo
+          do curso e projetos pessoais.
+          <br />
+          No momento estou iniciando minha carreira profissional
+          como Freelancer, mas estou aberto a propostas de emprego, gosto de trabalhar
+          principalmente no BackEnd, mas também me dou muito bem com FrontEnd
+          e estou disposto a aprender novas tecnológias caso necessário,
+          sou apaixonado por tecnologia, quase não vejo as horas passarem
+          enquanto estou codando.
+          <br />
+          Caso precise de mim, só entrar em contato pelas plataformas de
+          Freelancer abaixo, pelo meu Linkedin ou E-mail no rodapé.
+
         </p>
 
         <SocialMedia github={`github${colorMode}`} />

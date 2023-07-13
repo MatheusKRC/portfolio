@@ -1,16 +1,22 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import arrow from '../Assets/arrow.png';
 import ArrowW from '../Assets/White/ArrowW.png';
 import Baratiê from '../Images/Baratiê.png';
+import TAD from '../Images/T&D.png';
+import GameWallet from '../Images/GameWallet.png';
+import Trivia from '../Images/Trivia.png';
+import AnotherMusic from '../Images/AnotherMusic.png';
 import TFC from '../Images/TFC.png';
+import Farmanet from '../Images/Farmanet.png';
 import TryBeer from '../Images/TryBeer.png';
 import { changeColor, projectsBR, projectsENG } from '../Utils/AllProjects';
 
 function ProjectsMap({ language, colorMode }) {
   const [filter, setFilter] = useState('projectImage');
   const [infoFilter, setInfoFilter] = useState('projectInfos');
-  const projects = [Baratiê, TFC, TryBeer];
+  const projects = [Baratiê, TFC, TryBeer, Farmanet, AnotherMusic, GameWallet, TAD, Trivia];
   const [index, setIndex] = useState(0);
 
   const blur = () => {
@@ -27,7 +33,7 @@ function ProjectsMap({ language, colorMode }) {
     if (target.alt === 'left' && index > 0) {
       setIndex(index - 1);
     }
-    if (target.alt === 'right' && index < 2) {
+    if (target.alt === 'right' && index < projects.length - 1) {
       setIndex(index + 1);
     }
   };
@@ -56,8 +62,16 @@ function ProjectsMap({ language, colorMode }) {
 
             <br />
 
-            <button type="button" className="projectButtons">Repositorio</button>
-            <button type="button" className="projectButtons">Veja o Site</button>
+            {projectsBR[index].buttons.map((button, link) => (
+              <Link to={projectsBR[index].links[link]}>
+                <button type="button" className="projectButtons">
+                  {button}
+
+                </button>
+
+              </Link>
+
+            ))}
           </div>
         ) : (
           <div className={infoFilter}>

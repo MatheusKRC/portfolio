@@ -18,12 +18,15 @@ function Contact({ language, colorMode }) {
       <div className="footer">
         {' '}
         <p className={`textContactMe ${colorMode}`}>
-          The Last of Us is a television series based on the
-          popular video game of the same name. It follows the
-          story of Joel and Ellie, two survivors of a
-          post-apocalyptic world ravaged by a deadly fungus
-          that turns people into zombies, as they navigate
-          through dangerous terrain and encounter other survivors.
+          Este é um breve resumo sobre mim, minhas habilidades e projetos
+          ainda estou começando a minha carreira, mas garanto que posso
+          ser de grande ajuda no desenvolvimento de projetos, de qualquer forma
+          estou aqui para aprender cada vez mais e mais e estou disposto a enfrentar
+          qualquer desafio, estou aqui exatamente para isso, como Desenvolvedor meu trabalho é
+          justamente resolver problemas.
+          Caso precise de mim, meu e-mail é:
+          {' '}
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJXKbXbcPGrDLkDWpjmSLRTXWNFghWBVbbnwWWdwmmNJJzxnRdpjtXhtDttZxNtKGBGv">kyracraft0@gmail.com</a>
         </p>
 
         <SocialMedia github="githubMoon" />

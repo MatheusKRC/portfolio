@@ -16,18 +16,7 @@
     justify-content: center;
 }
 
-.artDiv {
-    border-radius: 5px;
-
-    width: 1400px;
-    height: 350px;
-
-    background-color: white;
-
-    margin-bottom: 140px;
-}
-
-.artDivMoon {
+.artDiv, .artDivMoon, .artDivSun {
     border-radius: 5px;
 
     width: 1400px;
@@ -39,14 +28,7 @@
 }
 
 .artDivSun {
-    border-radius: 5px;
-
-    width: 1400px;
-    height: 350px;
-
     background-color: black;
-
-    margin-bottom: 140px;
 }
 
 .art {
@@ -118,17 +100,7 @@
 }
 
 
-.softCard {
-    background-color: white;
-
-    width: 350px;
-    border-radius: 50px;
-    text-align: center;
-
-    transition-duration: .5s;
-}
-
-.softCardMoon {
+.softCard, .softCardMoon, .softCardSun {
     background-color: white;
 
     width: 350px;
@@ -140,12 +112,6 @@
 
 .softCardSun {
     background-color: rgb(15, 15, 16);
-
-    width: 350px;
-    border-radius: 50px;
-    text-align: center;
-
-    transition-duration: .5s;
 }
 
 .softBack {
@@ -184,7 +150,7 @@
 }
 
 @media screen and (max-width: 1550px) {
-    .artDiv {
+    .artDiv, .artDivSun, .artDivMoon {
         width: 1020px;
         height: 250px;
     }

@@ -83,7 +83,7 @@ html {
     transform: rotate(270deg);
 }
 
-.myPhotoDiv {
+.myPhotoDiv, .myPhotoDivMoon, .myPhotoDivSun {
     animation: moveToRight 2s ease;
     border-radius: 5px;
 
@@ -97,29 +97,7 @@ html {
 }
 
 .myPhotoDivMoon {
-  animation: moveToRight 2s ease;
-  border-radius: 5px;
-
-  width: 504px;
-  height: 757px;
-
-  margin-top: 4%;
-  margin-right: 15%;
-
   background-color: white;
-}
-
-.myPhotoDivSun {
-  animation: moveToRight 2s ease;
-  border-radius: 5px;
-
-  width: 504px;
-  height: 757px;
-
-  margin-top: 4%;
-  margin-right: 15%;
-
-  background-color: black;
 }
 
 .myPhoto {
@@ -198,7 +176,7 @@ html {
       height: 600px;
     }
 
-    .myPhotoDiv {
+    .myPhotoDiv, .myPhotoDivMoon, .myPhotoDivSun {
       width: 400px;
       height: 600px;
 
@@ -236,4 +214,5 @@ html {
     .aboutPage {
       height: 900px;
     }
+
 }

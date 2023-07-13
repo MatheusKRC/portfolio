@@ -140,13 +140,18 @@ body {
 
 .colorMode {
     display: flex;
+
+    align-items: center;
+
+    margin-right: 70px;
+    margin-left: -30px;
 }
 
 .display {
     width: 60px;
     height: 35px;
 
-    margin-left: 20px;
+    margin-right: 20px;
 
     background: none;
     border: none;
@@ -189,7 +194,24 @@ body {
 
 @media screen and (max-width: 500px){
     .navBarPage {
-        width: 300px;
-        filter: opacity(0%);
+        display: flex;
+        filter: opacity(100%);
+        justify-content: space-between;
+        flex-direction: row;
+        
+        /* flex-wrap: wrap; */
+    }
+
+    .language {
+        margin-right: 0;
+        display: inline;
+    }
+
+    .navLink {
+        filter: opacity(0);
+    }
+
+    .colorMode {
+        margin-left: 50px;
     }
 }

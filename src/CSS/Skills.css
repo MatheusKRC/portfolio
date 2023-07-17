@@ -16,18 +16,7 @@
     justify-content: center;
 }
 
-.artDiv {
-    border-radius: 5px;
-
-    width: 1400px;
-    height: 350px;
-
-    background-color: white;
-
-    margin-bottom: 140px;
-}
-
-.artDivMoon {
+.artDiv, .artDivMoon, .artDivSun {
     border-radius: 5px;
 
     width: 1400px;
@@ -39,14 +28,7 @@
 }
 
 .artDivSun {
-    border-radius: 5px;
-
-    width: 1400px;
-    height: 350px;
-
     background-color: black;
-
-    margin-bottom: 140px;
 }
 
 .art {
@@ -118,17 +100,7 @@
 }
 
 
-.softCard {
-    background-color: white;
-
-    width: 350px;
-    border-radius: 50px;
-    text-align: center;
-
-    transition-duration: .5s;
-}
-
-.softCardMoon {
+.softCard, .softCardMoon, .softCardSun {
     background-color: white;
 
     width: 350px;
@@ -140,12 +112,6 @@
 
 .softCardSun {
     background-color: rgb(15, 15, 16);
-
-    width: 350px;
-    border-radius: 50px;
-    text-align: center;
-
-    transition-duration: .5s;
 }
 
 .softBack {
@@ -167,11 +133,7 @@
     border-radius: 50px;
 }
 
-.softCard:hover {
-    box-shadow: 0 4px 18px 0 white;
-}
-
-.softCardMoon:hover {
+.softCard:hover, .softCardMoon:hover {
     box-shadow: 0 4px 18px 0 white;
 }
 
@@ -183,3 +145,68 @@
     transform: translate(10px, -10px);
 }
 
+@media screen and (max-width: 1550px) {
+    .artDiv, .artDivSun, .artDivMoon {
+        width: 1020px;
+        height: 250px;
+    }
+
+    .art {
+        width: 1020px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .artDiv, .artDivSun, .artDivMoon {
+        width: 320px;
+        height: 100px;
+
+        margin-bottom: 200px;
+    }
+
+    .art {
+        width: 320px;
+        height: 100px;
+    }
+
+    .iconFigure {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .icon {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .iconName {
+        font-size: small;
+    }
+
+    .softSkills {
+        flex-wrap: wrap;
+    }
+    
+    .softCard, .softCardMoon, .softCardSun {    
+        width: 280px;
+    }
+    
+    .softCardSun {
+        background-color: rgb(15, 15, 16);
+    }
+    
+    .softBack {
+        transition-duration: .5s;
+    }
+    
+    .softSkill {
+        transform: translate(10px, 10px);
+    }
+
+    .softText {    
+        font-size: 13px;
+    }
+    
+}

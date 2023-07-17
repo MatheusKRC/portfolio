@@ -64,6 +64,21 @@ function NavBar({ onClick, changeColor, colorMode }) {
 
       </div>
 
+      <div className="colorMode">
+        <button onClick={changeColorIcon} className={`display ${sun}`} type="button">
+          <img className="displayIcon" alt="sun" src={colorMode === 'Sun' || colorMode === '' ? Sun : SunW} />
+
+        </button>
+        <button onClick={changeColorIcon} className={`display ${moon}`} type="button">
+          <img className="displayIcon" alt="moon" src={colorMode === 'Sun' || colorMode === '' ? Moon : MoonW} />
+
+        </button>
+        <button onClick={changeColorIcon} className={`display ${bw}`} type="button">
+          <img className="displayIcon" alt="bw" src={colorMode === 'Sun' || colorMode === '' ? B : W} />
+
+        </button>
+      </div>
+
       <div className="links">
         <a className={`navLink ${colorMode}`} href="#About">
           {filterBrasil === 'noFilter' ? <span className={`hover-underline-animation${colorMode}`}> Sobre Mim </span>
@@ -86,21 +101,6 @@ function NavBar({ onClick, changeColor, colorMode }) {
 
         </a>
 
-      </div>
-
-      <div className="colorMode">
-        <button onClick={changeColorIcon} className={`display ${sun}`} type="button">
-          <img className="displayIcon" alt="sun" src={colorMode === 'Sun' || colorMode === '' ? Sun : SunW} />
-
-        </button>
-        <button onClick={changeColorIcon} className={`display ${moon}`} type="button">
-          <img className="displayIcon" alt="moon" src={colorMode === 'Sun' || colorMode === '' ? Moon : MoonW} />
-
-        </button>
-        <button onClick={changeColorIcon} className={`display ${bw}`} type="button">
-          <img className="displayIcon" alt="bw" src={colorMode === 'Sun' || colorMode === '' ? B : W} />
-
-        </button>
       </div>
 
     </nav>

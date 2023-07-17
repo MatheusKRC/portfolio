@@ -69,3 +69,9 @@
 #Linux {
     color: #e4942c;
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  

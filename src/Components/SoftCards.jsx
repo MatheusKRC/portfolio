@@ -59,12 +59,13 @@ function SoftCards({ language, colorMode }) {
           <h2 className={`softSkill ${colorMode}`}>Criativity</h2>
           <div className={`softCard${colorMode}`}>
             <p className={`softText ${colorMode}`}>
-              The Last of Us is a television series based on the
-              popular video game of the same name. It follows the
-              story of Joel and Ellie, two survivors of a
-              post-apocalyptic world ravaged by a deadly fungus
-              that turns people into zombies, as they navigate
-              through dangerous terrain and encounter other survivors.
+              I really like trying to differentiate between ideas and
+              I often exercise my creativity with the
+              objective of joining different ideas and shaping
+              them until you get the best result.
+              I usually separate it into stages, namely: brainstorm ideas,
+              seek inspirations, choose the best and most viable
+              and finally start producing.
 
             </p>
 
@@ -76,12 +77,12 @@ function SoftCards({ language, colorMode }) {
           <h2 className={`softSkill ${colorMode}`}>Comunication</h2>
           <div className={`softCard${colorMode}`}>
             <p className={`softText ${colorMode}`}>
-              The Last of Us is a television series based on the
-              popular video game of the same name. It follows the
-              story of Joel and Ellie, two survivors of a
-              post-apocalyptic world ravaged by a deadly fungus
-              that turns people into zombies, as they navigate
-              through dangerous terrain and encounter other survivors.
+              My Communication is my main SoftSkill, I have
+              very easy to pass on what I want to say, trying at the same time
+              maximum always generate interest in the listener so that he understands
+              more easily what I have to say. can easily
+              explain the logic behind a code or abstract the concept
+              of an idea for a project.
 
             </p>
           </div>
@@ -92,12 +93,11 @@ function SoftCards({ language, colorMode }) {
           <h2 className={`softSkill ${colorMode}`}>Learning Curve</h2>
           <div className={`softCard${colorMode}`}>
             <p className={`softText ${colorMode}`}>
-              The Last of Us is a television series based on the
-              popular video game of the same name. It follows the
-              story of Joel and Ellie, two survivors of a
-              post-apocalyptic world ravaged by a deadly fungus
-              that turns people into zombies, as they navigate
-              through dangerous terrain and encounter other survivors.
+              I find it easy to absorb and understand new knowledge,
+              it will hardly be necessary to explain something to me several times,
+              if there is something I do not know 100% i will not take long until
+              I learn and even if it is difficult I am always willing to
+              mes strive to learn some content that is necessary.
 
             </p>
           </div>

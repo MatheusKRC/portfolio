@@ -87,8 +87,16 @@ function ProjectsMap({ language, colorMode }) {
 
             <br />
 
-            <button type="button" className="projectButtons">Repository</button>
-            <button type="button" className="projectButtons">See the Website</button>
+            {projectsENG[index].buttons.map((button, link) => (
+              <Link to={projectsBR[index].links[link]}>
+                <button type="button" className={`projectButtons${colorMode}`}>
+                  {button}
+
+                </button>
+
+              </Link>
+
+            ))}
           </div>
         )}
       </section>

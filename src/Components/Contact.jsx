@@ -17,17 +17,31 @@ function Contact({ language, colorMode }) {
 
       <div className="footer">
         {' '}
-        <p className={`textContactMe ${colorMode}`}>
-          Este é um breve resumo sobre mim, minhas habilidades e projetos,
-          ainda estou começando a minha carreira, mas garanto que posso
-          ser de grande ajuda no desenvolvimento de projetos, de qualquer forma
-          estou aqui para aprender cada vez mais e mais e estou disposto a enfrentar
-          qualquer desafio, estou aqui exatamente para isso, como Desenvolvedor meu trabalho é
-          justamente resolver problemas.
-          Caso precise de mim, meu e-mail é:
-          {' '}
-          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJXKbXbcPGrDLkDWpjmSLRTXWNFghWBVbbnwWWdwmmNJJzxnRdpjtXhtDttZxNtKGBGv">kyracraft0@gmail.com</a>
-        </p>
+        {language === 'Portugues' ? (
+          <p className={`textContactMe ${colorMode}`}>
+            Este é um breve resumo sobre mim, minhas habilidades e projetos,
+            ainda estou começando a minha carreira, mas garanto que posso
+            ser de grande ajuda no desenvolvimento de projetos, de qualquer forma
+            estou aqui para aprender cada vez mais e mais e estou disposto a enfrentar
+            qualquer desafio, estou aqui exatamente para isso, como Desenvolvedor meu trabalho é
+            justamente resolver problemas.
+            Caso precise de mim, meu e-mail é:
+            {' '}
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJXKbXbcPGrDLkDWpjmSLRTXWNFghWBVbbnwWWdwmmNJJzxnRdpjtXhtDttZxNtKGBGv">kyracraft0@gmail.com</a>
+          </p>
+        ) : (
+          <p className={`textContactMe ${colorMode}`}>
+            This is a brief summary about me, my skills and projects,
+            I am still starting my career, but I guarantee that I can
+            be of great help in the development of projects, in any way
+            I am here to learn more and more and I am willing to face
+            any challenge, I am here for exactly that, as a Developer my job is
+            just solve problems.
+            If you need me, my email is:
+            {' '}
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJXKbXbcPGrDLkDWpjmSLRTXWNFghWBVbbnwWWdwmmNJJzxnRdpjtXhtDttZxNtKGBGv">kyracraft0@gmail.com</a>
+          </p>
+        )}
 
         <SocialMedia github="githubMoon" />
       </div>

@@ -18,7 +18,7 @@ function Contact({ language, colorMode }) {
       <div className="footer">
         {' '}
         <p className={`textContactMe ${colorMode}`}>
-          Este é um breve resumo sobre mim, minhas habilidades e projetos
+          Este é um breve resumo sobre mim, minhas habilidades e projetos,
           ainda estou começando a minha carreira, mas garanto que posso
           ser de grande ajuda no desenvolvimento de projetos, de qualquer forma
           estou aqui para aprender cada vez mais e mais e estou disposto a enfrentar

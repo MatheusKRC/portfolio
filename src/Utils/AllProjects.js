@@ -43,7 +43,7 @@ const projectsBR = [{
   links: ['link1', 'link2'],
 }, {
   name: 'Trybers and Dragons',
-  describe: 'teste',
+  describe: 'Aplicados os principios da arquitetura SOLID e Programação orientdada a objetos em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game)',
   skills: ['Node.js', 'JavaScript', 'Redux', 'Unit Tests'],
   buttons: ['CSS em Desenvolvimento', 'Repósitorio'],
   links: ['link1', 'link2'],

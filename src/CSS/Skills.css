@@ -133,11 +133,7 @@
     border-radius: 50px;
 }
 
-.softCard:hover {
-    box-shadow: 0 4px 18px 0 white;
-}
-
-.softCardMoon:hover {
+.softCard:hover, .softCardMoon:hover {
     box-shadow: 0 4px 18px 0 white;
 }
 
@@ -189,28 +185,12 @@
         font-size: small;
     }
 
-   
     .softSkills {
-        display: flex;
         flex-wrap: wrap;
-    
-        justify-content: space-evenly;
-    
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: white;
     }
     
-    
-    .softCard, .softCardMoon, .softCardSun {
-        background-color: white;
-    
+    .softCard, .softCardMoon, .softCardSun {    
         width: 280px;
-        height: 200px;
-        border-radius: 50px;
-        text-align: center;
-    
-        transition-duration: .5s;
     }
     
     .softCardSun {
@@ -225,17 +205,8 @@
         transform: translate(10px, 10px);
     }
 
-    
-    .softText {
-        text-align: left;
-    
-        background-color: black;
-        transform: translate(10px, -10px);
-        
-        padding: 30px;
-        border-radius: 50px;
-
-        font-size: small;
+    .softText {    
+        font-size: 13px;
     }
     
 }

@@ -134,39 +134,39 @@
     padding: 40px;
 
     border-radius: 20px;
-    border: 0px;
 
-    background-color: black;
-
-    color: white;
-
+    border: 3px solid black;
+    color: black;
+    text-transform: uppercase;
+    
+    box-shadow: 0 2px 10px black, 0 3px 6px black;
     font-size: large;
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.projectButtons:hover {
+.projectButtons:hover, .projectButtonsSun:hover, .projectButtonsMoon:hover {
     color: #ffffff;
     background: black;
     text-shadow: 0 0 5px #ffffff,
                 0 0 10px #ffffff,
                 0 0 20px #ffffff;
     box-shadow: 0 0 5px white,
-                0 0 20px white,
-                0 0 50px white,
-                0 0 100px white;
+                0 0 10px white,
+                0 0 10px white,
+                0 0 10px white;
     
 }
 
 .projectButtons:active {
 
-    transform: translate(2px, 2px);
+    transform: translate(4px, 4px);
 }
 
 @media screen and (max-width: 1550px) {
     .projects {
-        width: 1166px;
+        width: 1080px;
         height: 668px;
     }
 
@@ -180,8 +180,12 @@
         height: 668px;
     }
 
-    .infoVisible {
+    .infoVisible, .infoVisibleMoon, .infoVisibleSun {
         bottom: 670px;
+    }
+
+    .projectInfos, .projectInfosMoon, .projectInfosSun {
+        bottom: 690px;
     }
 }
 
@@ -212,18 +216,18 @@
 
     .arrow {
         width: 30px;
-        height: 50px;
+        height: 30px;
         
         margin-left: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .leftArrow {
         width: 30px;
-        height: 50px;
+        height: 30px;
 
         margin-right: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .infoVisible, .infoVisibleSun, .infoVisibleMoon {
@@ -243,12 +247,8 @@
 
     .projectInfos, .projectInfosSun, .projectInfosMoon {
         bottom: -50px;
-        text-align: center;
-        align-self: center;
         filter: opacity(100%);
-        transition-duration: 0.3s;
         
-        filter: opacity(100);
         color: black;
         text-shadow: none;
 
@@ -263,10 +263,7 @@
     .projectTasks, .projectTasksSun, .projectTasksMoon {
         display: inline-block;
 
-        padding: 15px;
-        border-radius: 20px;
-
-        font-size: small;
+        font-size: 13px;
     
         background-color: black;
         color: white;
@@ -289,29 +286,28 @@
     }
     
     .projectButtons, .projectButtonsSun, .projectButtonsMoon {
-        margin-top: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-top: 60px;
 
         text-decoration: none;
     
         padding: 30px;
     
-        border-radius: 20px;
-        border: 0px;
+        background-color: white;
+
+        border: 3px solid black;
+        color: black;
+        text-transform: uppercase;
     
-        background-color: black;
+        box-shadow: 0 2px 10px black, 0 3px 6px black;
     
-        color: white;
-    
-        font-size: small;
-        font-weight: bold;
-    
-        transition: 0.3s;
+        font-size: 13px;
+        
     }
 
     .projectButtonsMoon {
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
+
+        box-shadow: 0 2px 10px white, 0 3px 6px white;
     }
 }

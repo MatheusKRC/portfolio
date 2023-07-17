@@ -41,7 +41,7 @@ function About({ language, colorMode }) {
           enquanto estou codando.
           <br />
           Caso precise de mim, só entrar em contato pelas plataformas de
-          Freelancer abaixo, pelo meu Linkedin ou E-mail no rodapé.
+          Freelancer abaixo, pelo meu Linkedin ou E-mail na parte de contato.
 
         </p>
 

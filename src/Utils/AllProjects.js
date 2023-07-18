@@ -76,7 +76,7 @@ const projectsBR = [{
 },
 {
   name: 'Controle Financeiro Farmanet',
-  describe: 'Uma aplicação FullStack totalmente desenvolida pro mim, tem como objetivo ser uma página de controle financeiro do caixa com acesso aos registros de entrada e saída diários, controle de pagamento de funcionários, setor de cobranças para clientes em atraso e acesso a relátorios mensais',
+  describe: 'Uma aplicação FullStack totalmente desenvolvida por mim, tem como objetivo ser uma página de controle financeiro do caixa com acesso aos registros de entrada e saída diários, controle de pagamento de funcionários, setor de cobranças para clientes em atraso e acesso a relátorios mensais',
   skills: ['Node.js', 'JavaScript', 'Redux', 'Unit Tests'],
   buttons: ['em Desenvolvimento', 'Repósitorio'],
   links: ['link1', 'link2'],

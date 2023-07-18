@@ -159,7 +159,7 @@
     
 }
 
-.projectButtons:active {
+.projectButtons:active, .projectButtonsSun:active, .projectButtonsMoon:active {
 
     transform: translate(4px, 4px);
 }

@@ -74,7 +74,7 @@ function ProjectsMap({ language, colorMode }) {
             ))}
           </div>
         ) : (
-          <div className={infoFilter}>
+          <div className={`${infoFilter}${colorMode}`}>
 
             <h1 className="projectTitle">{projectsENG[index].name}</h1>
             <h3 className="projectDesc">
@@ -82,7 +82,7 @@ function ProjectsMap({ language, colorMode }) {
             </h3>
 
             {projectsENG[index].skills.map((skill) => (
-              <h4 className="projectTasks">{skill}</h4>
+              <h4 className={`projectTasks${colorMode}`}>{skill}</h4>
             ))}
 
             <br />

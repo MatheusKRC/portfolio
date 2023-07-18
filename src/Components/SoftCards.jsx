@@ -43,10 +43,10 @@ function SoftCards({ language, colorMode }) {
           <div className={`softCard${colorMode}`}>
             <p className={`softText ${colorMode}`}>
               Tenho facilidade em absorver e entender novos conhecimentos,
-              dificilmente será necessário me explicar algo diversas vezez,
+              dificilmente será necessário me explicar algo diversas vezes,
               caso tenha algo que eu não conheça 100% não irá demorar até que
               eu aprenda e mesmo que seja dificil estou sempre disposto a
-              mes esforçar para aprender algum conteúdo que seja necessário.
+              me esforçar para aprender algum conteúdo que seja necessário.
             </p>
           </div>
         </div>

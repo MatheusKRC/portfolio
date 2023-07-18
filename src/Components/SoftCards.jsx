@@ -11,7 +11,7 @@ function SoftCards({ language, colorMode }) {
             <p className={`softText ${colorMode}`}>
               Gosto muito de tentar diferenciar nas idéias e
               frequentemente exercito minha criatividade com o
-              objetivo de juntar diveras idéias e ir moldando
+              objetivo de juntar diversas idéias e ir moldando
               elas até obter o melhor resultado.
               Costumo separar em etapas, sendo elas: brainstorm de idéias,
               buscar inspirações, escolher a melhor e mais viável

@@ -1,5 +1,5 @@
 const changeColor = (color, asset1, asset2) => {
-  if (color === 'RepósitorioSun' || color === '') {
+  if (color === 'Sun' || color === '') {
     return asset1;
   }
   return asset2;

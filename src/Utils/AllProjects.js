@@ -10,7 +10,7 @@ const projectsENG = [{
   describe: 'Mobile application with access to different recipes for food or drinks developed in a group with a look inspired by the baratiê restaurant in One Piece.',
   skills: ['React.js', 'React Hooks', 'React-Redux', 'Team Work', 'Testing Library', 'Pair Programming'],
   buttons: ['under development', 'repository'],
-  links: ['', ''],
+  links: ['', 'https://github.com/MatheusKRC/baratie-recipes-app'],
 }, {
   name: 'Trybe Football Club',
   describe: 'The entire backend of the page was developed by me and the frontend to trybe left it ready to work only in the API, being one of information about football matches and different teams.',
@@ -52,7 +52,7 @@ const projectsENG = [{
   describe: 'A game with questions from various types of subjects as if it were a quiz, with score and rank records, project done in a group.',
   skills: ['React.js', 'JavaScript', 'Redux', 'Testing Library', 'CSS'],
   buttons: ['under development', 'repository'],
-  links: ['', ''],
+  links: ['', 'https://github.com/MatheusKRC/trivia-react-redux'],
 }];
 
 const projectsBR = [{
@@ -60,7 +60,7 @@ const projectsBR = [{
   describe: 'Aplicativo mobile com acesso a diferentes receitas de comidas ou bebidas desenvolvido em grupo com visual inspirado no restaurante baratiê de One Piece.',
   skills: ['React.js', 'React Hooks', 'React-Redux', 'Testing Library', 'Pair Programming'],
   buttons: ['em Desenvolvimento', 'Repósitorio'],
-  links: ['', ''],
+  links: ['', 'https://github.com/MatheusKRC/baratie-recipes-app'],
 }, {
   name: 'Trybe Futebol Clube',
   describe: 'Foi desenvolvido por mim todo o backend da página e frontend a trybe deixou pronto para trabalhar apenas na API, sendo uma de informações sobre partidas de futebol e diferentes times.',
@@ -103,7 +103,7 @@ const projectsBR = [{
   describe: 'Um jogo com perguntas de variados tipos de assuntos como se fosse um quiz, possuindo registros de pontuação e rank, projeto feito em grupo.',
   skills: ['React.js', 'JavaScript', 'Redux', 'Testing Library', 'CSS'],
   buttons: ['em Desenvolvimento', 'Repósitorio'],
-  links: ['', ''],
+  links: ['', 'https://github.com/MatheusKRC/trivia-react-redux'],
 }];
 
 export { projectsBR, projectsENG, changeColor };

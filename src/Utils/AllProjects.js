@@ -15,8 +15,8 @@ const projectsENG = [{
   name: 'Trybe Football Club',
   describe: 'The entire backend of the page was developed by me and the frontend to trybe left it ready to work only in the API, being one of information about football matches and different teams.',
   skills: ['Node.js', 'TypeScript', 'Team Work', 'Mocha', 'MySQL', 'Docker', 'Sequelize'],
-  buttons: ['under development', 'repository'],
-  links: ['', ''],
+  buttons: ['repository'],
+  links: ['https://github.com/MatheusKRC/trybe-futebol-clube'],
 }, {
   name: 'Trybeer',
   describe: 'A beverage delivery app, allowing the user to track delivery. FullStack application developed in a group of 4 people, I worked mainly on BackEnd and helped on FrontEnd.',
@@ -65,8 +65,8 @@ const projectsBR = [{
   name: 'Trybe Futebol Clube',
   describe: 'Foi desenvolvido por mim todo o backend da página e frontend a trybe deixou pronto para trabalhar apenas na API, sendo uma de informações sobre partidas de futebol e diferentes times.',
   skills: ['Node.js', 'TypeScript', 'Team Work', 'Mocha', 'MySQL', 'Docker', 'Sequelize'],
-  buttons: ['em Desenvolvimento', 'Repósitorio'],
-  links: ['', ''],
+  buttons: ['Repósitorio'],
+  links: ['https://github.com/MatheusKRC/trybe-futebol-clube'],
 }, {
   name: 'Trybeer',
   describe: 'Uma aplicativo de entrega de bebidas, onde você pode fazer pedidos de diferentes bebidas e acompanhar as entregas',

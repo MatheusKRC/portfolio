@@ -34,7 +34,7 @@ const projectsENG = [{
   describe: 'A place where you can listen to different songs from different artists and choose your favorites.',
   skills: ['React.js', 'JavaScript', 'API', 'React Router', 'States'],
   buttons: ['under development', 'repository'],
-  links: ['', ''],
+  links: ['https://anothermusic.netlify.app', 'https://github.com/MatheusKRC/another-music'],
 }, {
   name: 'Game Wallet',
   describe: 'Digital wallet with the option to record your expenses with brief descriptions of them.',
@@ -85,7 +85,7 @@ const projectsBR = [{
   describe: 'Um local onde você pode ouvir diversas músicas de diferentes artistas e separarar suas favoritas.',
   skills: ['React.js', 'JavaScript', 'API', 'React Router', 'States'],
   buttons: ['em Desenvolvimento', 'Repósitorio'],
-  links: ['', ''],
+  links: ['https://anothermusic.netlify.app', 'https://github.com/MatheusKRC/another-music'],
 }, {
   name: 'Game Wallet',
   describe: 'Carteira digital com opção de fazer registros dos seus gastos com descrições breves sobre eles',

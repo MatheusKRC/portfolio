@@ -79,30 +79,6 @@ function NavBar({ onClick, changeColor, colorMode }) {
         </button>
       </div>
 
-      <div className="links">
-        <a className={`navLink ${colorMode}`} href="#About">
-          {filterBrasil === 'noFilter' ? <span className={`hover-underline-animation${colorMode}`}> Sobre Mim </span>
-            : <span className={`hover-underline-animation${colorMode}`}> About Me </span> }
-
-        </a>
-        <a className={`navLink ${colorMode}`} href="#Skills">
-          {filterBrasil === 'noFilter' ? <span className={`hover-underline-animation${colorMode}`}> Habilidades </span>
-            : <span className={`hover-underline-animation${colorMode}`}> Skills </span>}
-
-        </a>
-        <a className={`navLink ${colorMode}`} href="#Projects">
-          {filterBrasil === 'noFilter' ? <span className={`hover-underline-animation${colorMode}`}> Projetos </span>
-            : <span className={`hover-underline-animation${colorMode}`}> Projects </span>}
-
-        </a>
-        <a className={`navLink ${colorMode}`} href="#Contact">
-          {filterBrasil === 'noFilter' ? <span className={`hover-underline-animation${colorMode}`}> Contato </span>
-            : <span className={`hover-underline-animation${colorMode}`}> Contact </span>}
-
-        </a>
-
-      </div>
-
     </nav>
   );
 }

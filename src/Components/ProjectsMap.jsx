@@ -5,6 +5,7 @@ import arrow from '../Assets/arrow.png';
 import ArrowW from '../Assets/White/ArrowW.png';
 import Baratiê from '../Images/Baratiê.png';
 import TAD from '../Images/T&D.png';
+import HolePass from '../Images/HolePass.png';
 import GameWallet from '../Images/GameWallet.png';
 import Trivia from '../Images/Trivia.png';
 import AnotherMusic from '../Images/AnotherMusic.png';
@@ -16,7 +17,8 @@ import { changeColor, projectsBR, projectsENG } from '../Utils/AllProjects';
 function ProjectsMap({ language, colorMode }) {
   const [filter, setFilter] = useState('projectImage');
   const [infoFilter, setInfoFilter] = useState('projectInfos');
-  const projects = [Baratiê, TFC, TryBeer, Farmanet, AnotherMusic, GameWallet, TAD, Trivia];
+  const projects = [
+    HolePass, Baratiê, TFC, TryBeer, Farmanet, AnotherMusic, GameWallet, TAD, Trivia];
   const [index, setIndex] = useState(0);
 
   const blur = () => {

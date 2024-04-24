@@ -55,26 +55,26 @@ function NavBar({ onClick, changeColor, colorMode }) {
       <div className={`language ${colorMode}`}>
 
         <button onClick={handleClick} className={`languageButton ${colorMode}`} type="button">
-          <img id={filterBrasil} className="languageImg" alt="Brasil" src={Brasil} />
+          <img width="50px" id={filterBrasil} className="languageImg" alt="Brasil" src={Brasil} />
         </button>
 
         <button onClick={handleClick} className={`languageButton ${colorMode}`} type="button">
-          <img id={filterEUA} className="languageImg" alt="EUA" src={EUA} />
+          <img width="50px" id={filterEUA} className="languageImg" alt="EUA" src={EUA} />
         </button>
 
       </div>
 
       <div className="colorMode">
         <button onClick={changeColorIcon} className={`display ${sun}`} type="button">
-          <img className="displayIcon" alt="sun" src={colorMode === 'Sun' || colorMode === '' ? Sun : SunW} />
+          <img width="50px" className="displayIcon" alt="sun" src={colorMode === 'Sun' || colorMode === '' ? Sun : SunW} />
 
         </button>
         <button onClick={changeColorIcon} className={`display ${moon}`} type="button">
-          <img className="displayIcon" alt="moon" src={colorMode === 'Sun' || colorMode === '' ? Moon : MoonW} />
+          <img width="50px" className="displayIcon" alt="moon" src={colorMode === 'Sun' || colorMode === '' ? Moon : MoonW} />
 
         </button>
         <button onClick={changeColorIcon} className={`display ${bw}`} type="button">
-          <img className="displayIcon" alt="bw" src={colorMode === 'Sun' || colorMode === '' ? B : W} />
+          <img width="50px" className="displayIcon" alt="bw" src={colorMode === 'Sun' || colorMode === '' ? B : W} />
 
         </button>
       </div>
